@@ -22,10 +22,10 @@ echo "Hello $USER_NAME"
 
 export COURSE_ID="DevOpsTheHardWay"
 
-# check if the file.token in the home directory exist and check the permmisions
+# check if the file .token in the home directory exist and check the permmisions
 if [[ -e "/home/$USER_NAME/.token" ]] ; then
 	token_FILE_PER=$(stat -c "%a" .token)
-	if [[ $token_FILE_PER -eq "600" ]] ; then
+	if [[ $token_FILE_PER -ne "600" ]] ; then
 		echo "Warning: .token file has too open permissions"
 	fi
 fi
