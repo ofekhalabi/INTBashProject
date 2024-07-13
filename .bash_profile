@@ -20,7 +20,7 @@ fi
 USER_NAME=$(whoami)
 echo "Hello $USER_NAME"
 
-export COURSE_ID="DevOpsTheHardWay"
+export COURSE_ID="__REPO_NAME__"
 
 # check if the file .token in the home directory exist and check the permmisions
 if [[ -e "/home/$USER_NAME/.token" ]] ; then
