@@ -18,7 +18,7 @@ fi
 
 #print hello to user 
 USER_NAME=$(whoami)
-echo "HELLO $USER_NAME"
+echo "Hello $USER_NAME"
 
 export COURSE_ID="DevOpsTheHardWay"
 
